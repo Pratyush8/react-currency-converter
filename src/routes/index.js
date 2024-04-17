@@ -6,7 +6,7 @@ function AppRoutes() {
   return (
     <Router>
         <Fragment>
-            <Suspense fallback={<div>Subscibe to Manohar Batra YT Channel...</div>}>
+            <Suspense fallback={<div>Loading...</div>}>
                 <Routes>                       
                     {PublicRoutes.map(({component: Component, slug, exact}, index) => (
                         <Route path={`${slug}`} key={index} exact element={<Component />}/>
